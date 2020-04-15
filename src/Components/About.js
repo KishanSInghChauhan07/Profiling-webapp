@@ -6,12 +6,12 @@ class About extends Component{
 
     render(){
         return (
-            <div id="about" className="row about-me">
+            <div id="about" className="row about-me pt-5">
                 <div className="col-md-6">
                     <img id="avatar-image" src="/assets/images/download.png" alt="avatar"  />
                 </div>
                 <div className="col-md-6">
-                    <h1 className="font-weight-bold mb-4">About</h1>
+                    <h1 className="font-weight-bold text-warning mb-4">About</h1>
                     <h3 className="Info mb-4">I am a freelance web developer. I like designing UI and working with 
                         front-end frameworks.
                     </h3>

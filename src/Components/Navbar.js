@@ -17,27 +17,28 @@ const Header = ( props ) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/" className="ml-3 nav">Mentor</NavLink>
+              <NavLink href="/" className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav">About</NavLink>
+              <NavLink href="" className="ml-3 nav"><i className="fa fa-info fa-md pr-2 text-white"></i>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav">Skills</NavLink>
+              <NavLink href="" className="ml-3 nav"><i className="fa fa-list fa-sm text-white pr-2"></i>Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav">Education</NavLink>
+              <NavLink href="" className="ml-3 nav"><i className="fa fa-graduation-cap fa-sm pr-2 text-white"></i>Education</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav">Projects</NavLink>
+              <NavLink href="" className="ml-3 nav"><i className="fa fa-tasks fa-sm pr-2 text-white"></i>Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav">Contact</NavLink>
+              <NavLink href="" className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
             </NavItem>
           </Nav>
           <NavbarText>
             <NavLink href="/">
-              <img src='assets/images/download.png' height="40" width="31" alt='nav-title' style={{ borderRadius: '50%' }}/>
+              {/* <img src='assets/images/download.png' height="40" width="31" alt='nav-title' style={{ borderRadius: '50%' }}/> */}
+              <i class="fa fa-user-circle fa-2x"></i>           
             </NavLink>
           </NavbarText>
         </Collapse>
