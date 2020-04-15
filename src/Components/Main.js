@@ -6,13 +6,9 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Education from './Education';
+import Mentor from './Mentor';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
-
-
-
-
-
 
 class Main extends Component {
     render() { 
@@ -21,7 +17,7 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route exact path='/About' component={About} />
-                    {/* <Route exact path='/Mentor' component={Mentor} /> */}
+                    <Route exact path='/Mentor' component={Mentor} />
                     <Route exact path='/Contact' component={Contact} />
                     <Route exact path='/Projects' component={Projects} />
                     <Route exact path='/Skills' component={Skills} />
