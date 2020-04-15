@@ -3,6 +3,7 @@ import Example from './Navbar';
 import Education from './Education'
 import About from './About'
 import Skills from './Skills'
+import Experience from './Experience'
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ class Main extends Component {
              <div className="container">
              <About/>
              <Education/>
+             <Experience/>
              <Skills/>
              </div>
             </BrowserRouter>

@@ -22,6 +22,10 @@ const Example = ( props ) => {
             </NavItem>
 
             <NavItem>
+              <NavLink href="#about">Experience</NavLink>
+            </NavItem>
+
+            <NavItem>
               <NavLink href="#about">Skills</NavLink>
             </NavItem>
 
