@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Example from './Navbar';
+import Education from './Education'
 import About from './About'
+import Skills from './Skills'
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -8,11 +10,11 @@ class Main extends Component {
     render() { 
         return (
             <BrowserRouter>
-            <div>
              <Example/>
              <div className="container">
              <About/>
-             </div>
+             <Education/>
+             <Skills/>
              </div>
             </BrowserRouter>
           );
