@@ -1,0 +1,14 @@
+.nav{
+    font-size: 16px;
+}
+
+
+.nav:hover{
+    color:rgb(255,189,57) !important;
+}
+
+
+.navbrand{
+    font-size: 26px;
+    padding-right:20%;
+}
