@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Navbar';
 import About from './About';
+import Footer from './Footer';
+
 
 
 
@@ -11,10 +13,10 @@ class Main extends Component {
         return (
             <BrowserRouter>
                 <Header />
-                <div className="container pb-5">
+                <div className="container">
                     <About/>
-                    
                 </div>
+                <Footer />
             </BrowserRouter>
           );
     }

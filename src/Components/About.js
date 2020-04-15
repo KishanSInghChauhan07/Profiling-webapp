@@ -6,7 +6,7 @@ class About extends Component{
 
     render(){
         return (
-            <div id="about" className="row about-me pt-5">
+            <div id="about" className="row about-me">
                 <div className="col-md-6">
                     <img id="avatar-image" src="/assets/images/download.png" alt="avatar"  />
                 </div>
