@@ -6,8 +6,9 @@ class About extends Component{
 
     render(){
         return (
-            <div id="about" className="row about-me">
-                <div className="col-md-6">
+            <div className="container">
+                <div id="about" className="row about-me">
+                <div className="col-md-6" style={{ padding: '0px 59px' }}>
                     <img id="avatar-image" src="/assets/images/download.png" alt="avatar"  />
                 </div>
                 <div className="col-md-6">
@@ -24,6 +25,8 @@ class About extends Component{
                     <Button color="warning" className="mt-3 btn p-3">Resume</Button>{' '}
                 </div>
             </div>
+            </div>
+            
         )
     }
 } 

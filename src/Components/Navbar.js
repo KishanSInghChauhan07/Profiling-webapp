@@ -32,7 +32,7 @@ const Header = ( props ) => {
               <NavLink href="" className="ml-3 nav"><i className="fa fa-tasks fa-sm pr-2 text-white"></i>Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
+              <NavLink href="/" className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
             </NavItem>
           </Nav>
           <NavbarText>
