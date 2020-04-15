@@ -10,8 +10,8 @@ const Header = ( props ) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="container-fluid bg-dark">
-      <Navbar color="dark" dark expand="md" className="container sticky-top">
+    <div className="container-fluid bg-dark fixed-top border-bottom border-white">
+      <Navbar color="dark" dark expand="md" className="container">
         <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
