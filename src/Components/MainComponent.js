@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Example from './Navbar';
+import Header from './Navbar';
+import About from './About'
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -8,10 +9,12 @@ class Main extends Component {
         return (
             <BrowserRouter>
             <div>
-             <Example />
-            </div>
+             <Header />
+             <div className="container">
+             <About/>
+             </div>
+             </div>
             </BrowserRouter>
-            
           );
     }
 }

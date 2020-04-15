@@ -5,7 +5,7 @@ import Main from './Components/MainComponent';
 function App() {
   return (
     
-    <div className="App">
+    <div className="App bg-dark text-light">
       <Main />
     </div>
     

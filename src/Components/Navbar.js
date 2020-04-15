@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,NavbarText } from 'reactstrap';
+
 import '../Styles/Navbar.css'
 
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
 
+
+const Header = ( props ) => {
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div className="container-fluid bg-dark">
-      <Navbar color="dark" dark expand="md" className="container">
+      <Navbar color="dark" dark expand="md" className="container sticky-top">
         <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -44,4 +46,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default Header;
