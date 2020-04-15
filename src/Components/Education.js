@@ -6,7 +6,7 @@ class Education extends Component{
 
     render(){
         return (
-            <React.Fragment>
+            <div className="container">
                 <h1 className="text-center">Education</h1>
                 <div className="row education">
                     <div className="col-md-6">
@@ -26,7 +26,7 @@ class Education extends Component{
     				</div>
                     </div>
                 </div>
-            </React.Fragment>
+            </div>
         )
     }
 }

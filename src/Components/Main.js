@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import Header from './Navbar';
 import About from './About';
 import Footer from './Footer';
-// import About from './About';
-// import mentor from './Mentor';
+import Skills from './Skills';
+import Projects from './Projects';
 import Contact from './Contact';
+import Education from './Education';
 
-import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 
@@ -16,18 +17,20 @@ import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 class Main extends Component {
     render() { 
         return (
-            <BrowserRouter>
+            <div>
                 <Header />
                 <Switch>
-                    <Route exact path='/about' component={About} />
-                    {/* <Route exact path='/mentor' component={mentor} /> */}
-                    <Route exact path='/contactus' component={Contact} />} />
-
+                    <Route exact path='/About' component={About} />
+                    {/* <Route exact path='/Mentor' component={Mentor} /> */}
+                    <Route exact path='/Contact' component={Contact} />
+                    <Route exact path='/Projects' component={Projects} />
+                    <Route exact path='/Skills' component={Skills} />
+                    <Route exact path='/Education' component={Education} />
                     <Redirect to="/About" />
                 </Switch>
                 <Footer />
-            </BrowserRouter>
-          );
+            </div>
+        );
     }
 }
  

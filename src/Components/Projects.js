@@ -4,7 +4,7 @@ class Project extends Component {
     state = {  }
     render() { 
         return (
-            <div>
+            <div className="container">
                 <h1>Project</h1>
             </div>
         );
