@@ -10,32 +10,32 @@ const Header = ( props ) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="container-fluid bg-dark fixed-top border-bottom border-white">
-      <Navbar color="dark" dark expand="md" className="container">
+    <div className="border-bottom border-white">
+      <Navbar color="dark" dark expand="md" className="container ">
         <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/" className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
+              <NavLink href="/About" className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
+              <NavLink href="/Mentor" className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
+              <NavLink href="/Experience" className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"><i className="fa fa-list fa-sm text-white pr-2"></i>Skills</NavLink>
+              <NavLink href="/Skills" className="ml-3 nav"><i className="fa fa-list fa-sm text-white pr-2"></i>Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"><i className="fa fa-graduation-cap fa-sm pr-2 text-white"></i>Education</NavLink>
+              <NavLink href="/Education" className="ml-3 nav"><i className="fa fa-graduation-cap fa-sm pr-2 text-white"></i>Education</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"><i className="fa fa-tasks fa-sm pr-2 text-white"></i>Projects</NavLink>
+              <NavLink href="/Projects" className="ml-3 nav"><i className="fa fa-tasks fa-sm pr-2 text-white"></i>Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
+              <NavLink href="/Contact" className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
             </NavItem>
           </Nav>
           <NavbarText>

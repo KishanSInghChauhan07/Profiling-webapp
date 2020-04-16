@@ -6,8 +6,9 @@ class About extends Component{
 
     render(){
         return (
-            <div id="about" className="row about-me pt-5">
-                <div className="col-md-6">
+            <div className="container">
+                <div id="about" className="row about-me">
+                <div className="col-md-6" style={{ padding: '0px 59px' }}>
                     <img id="avatar-image" src="/assets/images/download.png" alt="avatar"  />
                 </div>
                 <div className="col-md-6">
@@ -20,10 +21,12 @@ class About extends Component{
                     <h3 className="font-weight-normal mb-2">Date of Birth : &nbsp; <span className="font-weight-lighter Info">20-10-1998</span></h3>
                     <h3 className="font-weight-normal mb-2">Email : &nbsp; <span className="font-weight-lighter Info">Triceria.try@gmail.com</span></h3>
                     <h3 className="font-weight-normal mb-4">Phone : &nbsp; <span className="font-weight-lighter Info">I'll not tell you,Sorry</span></h3>
-                    <h3><span className="text-warning mr-3">10</span><span className="font-weight-lighter Info">Projects Competed</span> </h3>
+                    <h3><span className="text-warning mr-3">10</span><span className="font-weight-lighter Info">Projects Completed</span> </h3>
                     <Button color="warning" className="mt-3 btn p-3">Resume</Button>{' '}
                 </div>
             </div>
+            </div>
+            
         )
     }
 } 

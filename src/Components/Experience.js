@@ -6,6 +6,7 @@ class Experience extends Component{
     render(){
         return (
             <React.Fragment>
+                <div className="container">
                 <h1 className="text-center">Experience</h1>
                 <div className="row education">
                     <div className="col-md-6">
@@ -24,6 +25,7 @@ class Experience extends Component{
     					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
     				</div>
                     </div>
+                </div>
                 </div>
             </React.Fragment>
         )
