@@ -7,6 +7,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Education from './Education';
 import Mentor from './Mentor';
+import Profile from './Profile';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -22,6 +23,8 @@ class Main extends Component {
                     <Route exact path='/Projects' component={Projects} />
                     <Route exact path='/Skills' component={Skills} />
                     <Route exact path='/Education' component={Education} />
+                    <Route exact path='/Profile' component={Profile} />
+
                     <Redirect to="/About" />
                 </Switch>
                 <Footer />

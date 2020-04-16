@@ -36,7 +36,7 @@ const Header = ( props ) => {
             </NavItem>
           </Nav>
           <NavbarText>
-            <NavLink href="/">
+            <NavLink href="/Profile">
               {/* <img src='assets/images/download.png' height="40" width="31" alt='nav-title' style={{ borderRadius: '50%' }}/> */}
               <i class="fa fa-user-circle fa-2x"></i>           
             </NavLink>
