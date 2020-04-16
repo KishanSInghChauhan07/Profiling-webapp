@@ -5,7 +5,7 @@ class Skills extends Component{
 
     render(){
         return (
-            <React.Fragment>
+           <div className="container">
             <h1 className="text-center">Skills</h1>
             <div className="row">
                 <div className="col-md-4 col-6 text-center">
@@ -27,7 +27,7 @@ class Skills extends Component{
                     <h3>SEO</h3>
                 </div>
             </div>
-            </React.Fragment>
+            </div>
         )
     }
 }

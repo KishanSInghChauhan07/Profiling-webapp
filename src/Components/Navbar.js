@@ -3,15 +3,13 @@ import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,NavbarTex
 
 import '../Styles/Navbar.css'
 
-
-
 const Header = ( props ) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div className="border-bottom border-white">
-      <Navbar color="dark" dark expand="md" className="container ">
+      <Navbar color="dark" dark expand="md" className="container">
         <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
