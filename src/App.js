@@ -4,12 +4,14 @@ import Main from './Components/Main.js';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-  return (
+  return ( 
+    <>
     <BrowserRouter>
-      <div className="App bg-dark text-light">
-        <Main />
+      <div className="App">
+        <Main/>
       </div>
     </BrowserRouter>
+    </>
   );
 }
 

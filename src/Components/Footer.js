@@ -1,8 +1,9 @@
 import React from 'react';
+import '../Styles/Footer.css'
 
 function Footer(props) {
     return(
-        <div className="Footer border-top border-white">
+        <div className="footer-bottom Footer border-top border-white">
             <div className="container">
                 <div className="row">             
                     <div className="col p-3">
@@ -12,7 +13,7 @@ function Footer(props) {
                         <a className="btn btn-social-icon btn-instagram mr-2 rounded" href="http://instagram.com/"><i className="fa fa-instagram"></i></a>
                     </div>
                     <div className="col p-3">
-                        <p>© Copyright 2020 Triceria</p>
+                        <p>&copy; Copyright 2020 Triceria</p>
                     </div>
                 </div>
             </div>
