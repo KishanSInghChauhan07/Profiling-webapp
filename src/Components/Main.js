@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Example from './Navbar';
+import Header from './Navbar';
 import Education from './Education'
 import About from './About'
 import Skills from './Skills'
@@ -11,7 +11,7 @@ class Main extends Component {
     render() { 
         return (
             <BrowserRouter>
-             <Example/>
+             <Header/>
              <div className="container">
              <About/>
              <Education/>

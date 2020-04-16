@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../styles/Experience.css'
+import '../Styles/Experience.css'
 
 class Experience extends Component{
 
