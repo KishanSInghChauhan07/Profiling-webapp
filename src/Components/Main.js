@@ -8,6 +8,8 @@ import Education from './Education';
 import Experience from './Experience'
 import Mentor from './Mentor';
 import Profile from './Profile';
+
+import Footer from './Footer';
 import { INTERNS } from '../Shared/Interns';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -23,6 +25,7 @@ class Main extends Component {
         return (
             <>
                 <Header />
+                
                 <Switch>
                     <Route exact path='/About' component={() => <About interns={this.state.interns} /> } />
                     <Route exact path='/Mentor' component={Mentor} />
@@ -34,7 +37,8 @@ class Main extends Component {
                     <Route exact path='/Profile' component={Profile} />
                     <Redirect to="/About" />
                 </Switch>
-                {/* <Footer/> */}
+                <Footer/>
+            
             </>
         );
     }

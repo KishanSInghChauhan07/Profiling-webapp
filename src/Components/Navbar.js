@@ -8,7 +8,7 @@ const Header = ( props ) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="border-bottom border-white">
+    <div className="border-bottom border-white ">
       <Navbar color="dark" dark expand="md" className="container">
         <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
         <NavbarToggler onClick={toggle} />

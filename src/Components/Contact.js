@@ -19,7 +19,7 @@ class contact extends Component {
                         <div className="text-center">
                             <i className="fa fa-3x fa-location-arrow"></i>
                             <h3>EMAIL ADDRESS</h3>
-                            <p><a>info@yoursite.com</a></p>
+                            <p><a href="/">info@yoursite.com</a></p>
                         </div>
                         
                     </div>
