@@ -8,13 +8,13 @@ class About extends Component{
         return (
             <div className="container">
                 <div id="about" className="row about-me">
-                <div className="col-md-6" style={{ padding: '0px 59px' }}>
+                <div className="col-md-6" style={{ padding: '0px 5%' }}>
                     <img id="avatar-image" src="/assets/images/download.png" alt="avatar"  />
                 </div>
                 <div className="col-md-6">
                     <h1 className="font-weight-bold text-warning mb-4">About</h1>
                     <h3 className="Info mb-4">I am a freelance web developer. I like designing UI and working with 
-                        front-end frameworks.
+                                              front-end frameworks.
                     </h3>
                     <h3 className="font-weight-normal mb-2">Name : &nbsp; <span className="font-weight-lighter Info">John Doe</span> </h3>
                     <h3 className="font-weight-normal mb-2">Location : &nbsp; <span className="font-weight-lighter Info">Delhi (India)</span></h3>

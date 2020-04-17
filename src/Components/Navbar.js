@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,NavbarText } from 'reactstrap';
-
 import '../Styles/Navbar.css'
 
 const Header = ( props ) => {

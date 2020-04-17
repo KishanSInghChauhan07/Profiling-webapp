@@ -3,7 +3,7 @@ import '../Styles/Footer.css'
 
 function Footer(props) {
     return(
-        <div className="footer-bottom Footer border-top border-white">
+        <div className="Footer footer-bottom border-top border-white">
             <div className="container">
                 <div className="row">             
                     <div className="col p-3">
