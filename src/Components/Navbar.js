@@ -17,10 +17,8 @@ const Header = ( props ) => {
             <NavItem>
               <NavLink href="/About" className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/Mentor" className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
-            </NavItem>
-            <NavItem>
+            
+         <NavItem>
               <NavLink href="/Experience" className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
             </NavItem>
             <NavItem>
