@@ -8,17 +8,24 @@ import Education from './Education';
 import Experience from './Experience'
 import Mentor from './Mentor';
 import Profile from './Profile';
-import Footer from './Footer';
+import Footer from './Footer'
+import { INTERNS } from '../Shared/Interns';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          interns:INTERNS,
+        };
+    }
     render() { 
         return (
             <>
                 <Header />
                 <Switch>
-                    <Route exact path='/About' component={About} />
+                    <Route exact path='/About' component={() => <About interns={this.state.interns} /> } />
                     <Route exact path='/Mentor' component={Mentor} />
                     <Route exact path='/Experience' component={Experience} />
                     <Route exact path='/Contact' component={Contact} />

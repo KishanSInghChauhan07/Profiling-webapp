@@ -8,8 +8,8 @@ class About extends Component{
         return (
             <div className="container">
                 <div id="about" className="row about-me">
-                <div className="col-md-6" style={{ padding: '0px 5%' }}>
-                    <img id="avatar-image" src="/assets/images/download.png" alt="avatar"  />
+                <div className="col-md-6" style={{ padding: '0px 59px' ,overflow:'hidden'}}>
+                    <img id="avatar-image" src="/assets/images/Captain.jpeg" alt="avatar"  />
                 </div>
                 <div className="col-md-6">
                     <h1 className="font-weight-bold text-warning mb-4">About</h1>
