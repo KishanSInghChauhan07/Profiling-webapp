@@ -1,9 +1,20 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,NavbarText } from 'reactstrap';
-
+import {withRouter} from "react-router-dom"
 import '../Styles/Navbar.css'
 
-const Header = ( props ) => {
+
+const isactive=(history,path)=>{
+   if(history.location.pathname===path){ 
+return {color:"rgb(255,189,57)"}
+}
+   else  return {color:"rgba(255,255,255,.5)"}
+
+ }
+
+
+
+const Header = ( history,props ) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -15,25 +26,25 @@ const Header = ( props ) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/About" className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
+              <NavLink href="/About" style={isactive(history,"/About")} className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Mentor" className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
+              <NavLink href="/Mentor" style={isactive(history,"/Mentor")} className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Experience" className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
+              <NavLink href="/Experience" style={isactive(history,"/Experience")} className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Skills" className="ml-3 nav"><i className="fa fa-list fa-sm text-white pr-2"></i>Skills</NavLink>
+              <NavLink href="/Skills" style={isactive(history,"/Skills")} className="ml-3 nav"><i className="fa fa-list fa-sm text-white pr-2"></i>Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Education" className="ml-3 nav"><i className="fa fa-graduation-cap fa-sm pr-2 text-white"></i>Education</NavLink>
+              <NavLink href="/Education" style={isactive(history,"/Education")} className="ml-3 nav"><i className="fa fa-graduation-cap fa-sm pr-2 text-white"></i>Education</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Projects" className="ml-3 nav"><i className="fa fa-tasks fa-sm pr-2 text-white"></i>Projects</NavLink>
+              <NavLink href="/Projects" style={isactive(history,"/Projects")} className="ml-3 nav"><i className="fa fa-tasks fa-sm pr-2 text-white"></i>Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Contact" className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
+              <NavLink href="/Contact" style={isactive(history,"/Contact")} className="ml-3 nav"><i className="fa fa-address-card fa-sm pr-2 text-white"></i>Contact</NavLink>
             </NavItem>
           </Nav>
           <NavbarText>
@@ -48,4 +59,4 @@ const Header = ( props ) => {
   );
 }
 
-export default Header;
+export default withRouter(Header);
