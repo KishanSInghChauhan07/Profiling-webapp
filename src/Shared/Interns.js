@@ -2,8 +2,8 @@ export const INTERNS =
     [
         {
         id: 0,
-        name:'Shaktiman',
-        image: '/assets/images/Shaktiman.jpeg',
+        name:'Captain America',
+        image: '/assets/images/Captain.jpeg',
         category: 'React Developer',
         featured: true,
         about:'I am a freelance web developer. I like designing UI and working with front-end frameworks. ',
@@ -14,8 +14,8 @@ export const INTERNS =
         },
         {
         id: 1,
-        name:'Captain America',
-        image: '/assets/images/Captain.jpeg',
+        name:'Shaktiman',
+        image: '/assets/images/Shaktiman.jpeg',
         category: 'Android Developer',
         featured: false,
         about:'I am a freelance Android developer. I like designing UI and working with native apps. ',
