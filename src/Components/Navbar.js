@@ -28,9 +28,13 @@ const Header = ( history,props ) => {
             <NavItem>
               <NavLink href="/About" style={isactive(history,"/About")} className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
             </NavItem>
+<<<<<<< HEAD
             <NavItem>
               <NavLink href="/Mentor" style={isactive(history,"/Mentor")} className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
             </NavItem>
+=======
+            
+>>>>>>> eb7d71bbd595a06b490c5747688ffb6f3c735c7f
             <NavItem>
               <NavLink href="/Experience" style={isactive(history,"/Experience")} className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
             </NavItem>

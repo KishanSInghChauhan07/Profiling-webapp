@@ -6,7 +6,6 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Education from './Education';
 import Experience from './Experience'
-import Mentor from './Mentor';
 import Profile from './Profile';
 import Signup from "./Signup"
 import Footer from './Footer';
@@ -34,8 +33,12 @@ class Main extends Component {
                 
                 <Switch>
                     <Route exact path="/Signup" component={Signup} />
+<<<<<<< HEAD
                     <Route exact path='/About' component={() => <About interns={this.state.interns} /> } />
                     <Route exact path='/Mentor' component={Mentor} />
+=======
+                    <Route exact path='/About' component = {() => <About interns={this.state.interns} /> } />
+>>>>>>> eb7d71bbd595a06b490c5747688ffb6f3c735c7f
                     <Route exact path='/Experience' component={Experience} />
                     <Route exact path='/Contact' component={Contact} />
                     <Route exact path='/Projects' component={() => <Projects  projects = { this.state.projects }/> } />
