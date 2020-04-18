@@ -19,16 +19,12 @@ class Login extends Component{
         })
     }
     handleSubmit = () =>{
-        if(!(this.state.email || this.state.password)){
-            return alert('Please enter email and password')
-        }
-        if(this.state.email==='mentor'){
-            this.props.push('/mentor')
+        if(this.state.email === 'mentor'){
+            this.props.history.push('/Mentor')
         }
         else{
             this.props.history.push('/About')
         }
-        
     }
 
     render(){
@@ -38,10 +34,10 @@ class Login extends Component{
                 <h1>Profiling App Login</h1>
                 <form onSubmit={this.handleSubmit}>
                 <div className="login-input">
-                    <input name="email" type="text" placeholder="Email" required onChange={(e)=>this.handleChange(e.target.name,e.target.value)}/>
+                    <input name="email" type="text" placeholder="Email or Username" required onChange={(e)=>this.handleChange(e.target.name,e.target.value)}/>
                 </div>
                 <div className="login-input">
-                    <input name="password" type="password" placeholder="Password" required onChange={(e)=>this.handleChange(e.target.name,e.target.value)}/>
+                    <input name="password" type="password" placeholder="Password" onChange={(e)=>this.handleChange(e.target.name,e.target.value)}/>
                 </div>
                 <div>
                     <input className="login-submit btn btn-primary" 

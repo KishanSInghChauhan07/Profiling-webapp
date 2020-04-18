@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class Mentor extends Component {
-    render() { 
-        return ( 
-        <div className="container">
-            <h1>Mentor</h1>
-        </div> 
-        );
-    }
+const Mentor = () => {
+    return (
+        <div>
+            <h1 className="text-center">Mentor Dashboard</h1>
+        </div>
+    )
 }
- 
-export default Mentor;
+
+export default Mentor

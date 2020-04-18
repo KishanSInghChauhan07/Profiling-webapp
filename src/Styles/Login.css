@@ -1,11 +1,10 @@
 .login-page{
     height:100vh;
-    background-color: lightcyan;
     padding:10%;
 }
 
 .login-form{
-    background-color: white;
+    background-color:darkslategrey;
     width:50%;
     height:65vh;
     margin:auto;

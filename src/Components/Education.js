@@ -6,10 +6,10 @@ class Education extends Component{
 		const education = this.props.education.filter((intern) => intern.internid === 0 ).map((education) => {
 			return(
 				<div className="col-12 text-capitalize mt-5">
-                    <hr style={{ border: '2px solid #ffc107', width: '4%' ,position:'absolute'}} />
+                    <hr className="text-success" style={{ border: '2px solid', width: '2%' ,position:'absolute'}} />
 					<div style={{ position: 'relative' , left: '8%'}}>
                     	<div className="d-flex flex-row ">
-							<h3 className="text-warning">{education.name}</h3>
+							<h3 className="text-success">{education.name}</h3>
 							<span style={{ marginLeft: '12rem' , paddingTop: '6px'}}>{education.duration}</span>
 						</div>
 						<h5 className="d-flex flex-row">{education.specialization}</h5>
@@ -20,6 +20,7 @@ class Education extends Component{
 		})
 		return (
             <div className="container">
+				<h2 className="text-center text-warning mb-4">Education</h2>
 				<div className="row education text-center">
 					{education}
                     {/* <div className="col-12 text-capitalize mt-5">

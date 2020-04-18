@@ -4,8 +4,9 @@ import '../Styles/About.css'
 
 class About extends Component{
     
-
+   
     render(){
+    
         return (
             <div className="container">
                 <div id="about" className="row about-me">
@@ -22,7 +23,7 @@ class About extends Component{
                     <h3 className="font-weight-normal mb-2">Email : &nbsp; <span className="font-weight-lighter Info">{this.props.interns[0].email}</span></h3>
                     <h3 className="font-weight-normal mb-4">Phone : &nbsp; <span className="font-weight-lighter Info">{this.props.interns[0].phone}</span></h3>
                     <h3><span className="text-warning mr-3">10</span><span className="font-weight-lighter Info">Projects Completed</span> </h3>
-                    <Button color="warning" className="mt-3 btn p-3">Resume</Button>{' '}
+                    <Button color="success" className="mt-3 btn p-3">Resume</Button>{' '}
                 </div>
             </div>
             </div>
@@ -31,4 +32,4 @@ class About extends Component{
     }
 } 
 
-export default About
+export default About;
