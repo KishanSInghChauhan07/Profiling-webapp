@@ -33,7 +33,7 @@ class Main extends Component {
                 
                 <Switch>
                     <Route exact path="/Signup" component={Signup} />
-                    <Route exact path='/About' component={() => <About interns={this.state.interns} /> } />
+                    <Route exact path='/About' component = {() => <About interns={this.state.interns} /> } />
                     <Route exact path='/Experience' component={Experience} />
                     <Route exact path='/Contact' component={Contact} />
                     <Route exact path='/Projects' component={() => <Projects  projects = { this.state.projects }/> } />

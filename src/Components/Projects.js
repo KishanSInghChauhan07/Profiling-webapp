@@ -9,10 +9,10 @@ class Project extends Component {
         const project = this.props.projects.filter((intern) => intern.internid === 0 ).map((project) => {
             return(
                 <div className="col-8 m-auto">
-                    <hr style={{ border: '2px solid #ffc107', width: '10%' ,position:'absolute' , top: '9%' , left:'-12%'}} />
+                    <hr className="text-success" style={{ border: '2px solid', width: '10%' ,position:'absolute' , top: '9%' , left:'-12%'}} />
                     <Card style={{background: 'inherit',border:'inherit'}} >
                         <CardBody>
-                        <CardTitle className="text-warning font-weight-bold text-capitalize mt-4" style={{fontSize:'20px'}}>{project.title}</CardTitle>
+                        <CardTitle className="text-success font-weight-bold text-capitalize mt-4" style={{fontSize:'22px'}}>{project.title}</CardTitle>
                         </CardBody>
                         <CardImg  onClick={this.handelClick} className="rounded" src={project.image} alt="Card image cap"  style={{width:'34%' ,paddingBottom:'4%' ,marginLeft:'2%'}} />
                         <CardBody>
@@ -26,6 +26,7 @@ class Project extends Component {
         }) 
         return (
             <div className="container">
+                <h2 className="text-center text-warning mt-4">Projects</h2>
                 <div className="row">
                     { project }
                     {/* <div className="col-8 m-auto">
