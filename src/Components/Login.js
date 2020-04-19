@@ -20,7 +20,7 @@ class Login extends Component{
     }
     handleSubmit = () =>{
         if(this.state.email === 'mentor'){
-            this.props.history.push('/Mentor')
+            this.props.history.push('/Admin')
         }
         else{
             this.props.history.push('/About')

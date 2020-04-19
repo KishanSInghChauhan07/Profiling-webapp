@@ -81,8 +81,7 @@ signupform=()=>(
       <input type="password" className="form-control"  value={this.state.password} onChange={this.handlechange("password")}/>
       </div>
 
-<button style={{borderRadius:"0"}} onClick={this.handleclick} className="btn btn-raised btn-primary font-weight-bold "> SUBMIT </button>
-<button style={{borderRadius:"0"}} className="mx-md-5 mx-3 btn btn-raised btn-danger font-weight-bold"> FORGOT PASSWORD </button>
+<button style={{borderRadius:"0"}} onClick={this.handleclick} className="btn btn-raised btn-primary font-weight-bold "> SIGN UP </button>
 
    </form>
 
