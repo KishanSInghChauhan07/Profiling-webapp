@@ -18,6 +18,7 @@ class Login extends Component{
             }
         })
     }
+    
     handleSubmit = () =>{
         if(this.state.email === 'mentor'){
             this.props.history.push('/Admin')
@@ -31,7 +32,7 @@ class Login extends Component{
         return (
             <div className="login-page container-fluid">
                 <div className="login-form text-center">
-                <h1>Profiling App Login</h1>
+                <h1>PROFILING APP LOGIN</h1>
                 <form onSubmit={this.handleSubmit}>
                 <div className="login-input">
                     <input name="email" type="text" placeholder="Email or Username" required onChange={(e)=>this.handleChange(e.target.name,e.target.value)}/>
