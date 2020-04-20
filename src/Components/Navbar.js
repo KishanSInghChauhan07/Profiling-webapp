@@ -19,19 +19,15 @@ const Header = ( history,props ) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="border-bottom border-white ">
-      <Navbar color="dark" dark expand="md" className="container">
-        <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+      <div className="border-bottom border-white ">
+         <Navbar color="dark" dark expand="md" className="container">
+          <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/About" style={isactive(history,"/About")} className="ml-3 nav"><i className="fa fa-info fa-sm pr-2 text-white"></i>About</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/Mentor" style={isactive(history,"/Mentor")} className="ml-3 nav"><i className="fa fa-user fa-sm pr-2 text-white"></i>Mentor</NavLink>
-            </NavItem>
-            
             <NavItem>
               <NavLink href="/Experience" style={isactive(history,"/Experience")} className="ml-3 nav"> <i className="fa fa-briefcase fa-sm pr-2 text-white"></i>Experience</NavLink>
             </NavItem>
