@@ -37,7 +37,7 @@ class Main extends Component {
                     <Route exact path='/Skills' component={() => <Skills  skills = { this.state.skills }/> } />
                     <Route exact path='/Education' component={() => <Education  education = { this.state.education }/> } />
                     <Route exact path='/Profile' component={Profile} />
-                    <Redirect to="/About" />
+                    <Redirect to="/About"/>
                 </Switch>
                 <Footer/>
             </>

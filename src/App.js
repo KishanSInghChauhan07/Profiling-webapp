@@ -15,7 +15,7 @@ function App() {
         <Route exact path='/Signup' component = {Signup}/>
         <Route exact path='/Admin' component={Admin}/>
         <Route exact path="*" component={Main}/>
-        <Redirect to="/login" />
+        <Redirect to="/" />
       </Switch>
     </BrowserRouter>
     </>
