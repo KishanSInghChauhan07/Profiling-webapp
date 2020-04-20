@@ -1,5 +1,4 @@
 import React from 'react'
-import '../Styles/Experience.css'
 
 const Experience = ({ company,role,duration,description }) => {
         return (

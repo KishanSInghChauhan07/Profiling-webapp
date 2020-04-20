@@ -1,5 +1,4 @@
 import React from 'react'
-import '../Styles/Education.css'
 
 const Education = ( { duration,specialization,grade,name}) => {
 		return(

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink } from 'reactstrap';
 import {withRouter} from "react-router-dom"
-import '../Styles/Navbar.css'
+import '../Styles/Navbar.scss'
 
 
 const isactive=(history,path)=>{

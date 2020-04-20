@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import '../Styles/About.css'
+import '../Styles/About.scss'
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';
@@ -11,7 +11,7 @@ const About = ({ image,name,location,phone,email,dob,about,education ,skills,exp
             <div className="container">
                 <div id="about" className="row about-me">
                 <div className="col-md-6" style={{ padding: '0px 59px' ,overflow:'hidden'}}>
-                    <img id="avatar-image" src={ image } alt="avatar"  />
+                    <img className="avatar-image" src={ image } alt="avatar"  />
                 </div>
                 <div className="col-md-6">
                     <h1 className="font-weight-bold text-warning mb-4">About</h1>
