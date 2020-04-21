@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import '../Styles/Skills.scss'
+import './styles/Skills.scss'
 // import { Progress } from 'reactstrap'
 // import { TransitionGroup } from 'react-transition-group';
 import AOS from 'aos'

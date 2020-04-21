@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink } from 'reactstrap';
 import {withRouter} from "react-router-dom"
-import '../Styles/Navbar.scss'
+import './styles/Navbar.scss'
 
 
 const isactive=(history,path)=>{
@@ -19,7 +19,7 @@ const Header = ( history,props ) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <div className="border-bottom border-white fixed-top">
+      <div className="border-bottom border-white">
          <Navbar color="dark" dark expand="md" className="container">
           <NavbarBrand href="/"  className="font-weight-bold navbrand" >Triceria</NavbarBrand>
           <NavbarToggler onClick={toggle} />

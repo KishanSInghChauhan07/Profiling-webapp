@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import '../Styles/About.scss'
+import './styles/About.scss'
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';

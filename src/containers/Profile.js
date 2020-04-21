@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import About from './About';
+import About from '../Components/About';
 import  INTERNS_DATA  from '../Shared/Interns';
-import Contact from './Contact';
+import Contact from '../Components/Contact';
 
 
 
