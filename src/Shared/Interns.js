@@ -82,7 +82,7 @@ const INTERNS_DATA = [
                 company:'Microsoft',
                 role:'React Developer Intern',
                 duration: '2 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations.' 
 
             },
             {
@@ -90,7 +90,7 @@ const INTERNS_DATA = [
                 company:'Amazon',
                 role:'Full Stack Developer',
                 duration: '3 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
     },
@@ -176,7 +176,7 @@ const INTERNS_DATA = [
                 company:'Microsoft',
                 role:'React Developer Intern',
                 duration: '2 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
 
             },
             {
@@ -184,7 +184,7 @@ const INTERNS_DATA = [
                 company:'Amazon',
                 role:'Full Stack Developer',
                 duration: '3 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
     },
@@ -270,7 +270,7 @@ const INTERNS_DATA = [
                 company:'Microsoft',
                 role:'React Developer Intern',
                 duration: '2 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
 
             },
             {
@@ -278,7 +278,7 @@ const INTERNS_DATA = [
                 company:'Amazon',
                 role:'Full Stack Developer',
                 duration: '3 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
     },
@@ -366,7 +366,7 @@ const INTERNS_DATA = [
                 company:'Microsoft',
                 role:'React Developer Intern',
                 duration: '2 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
 
             },
             {
@@ -374,7 +374,7 @@ const INTERNS_DATA = [
                 company:'Amazon',
                 role:'Full Stack Developer',
                 duration: '3 mon',
-                description:'It was the best experience ' 
+                description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
     }

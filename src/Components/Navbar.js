@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink } from 'reactstrap';
-import {withRouter} from "react-router-dom"
+import {withRouter } from "react-router-dom"
 import './styles/Navbar.scss'
+import { auth } from '../firebase/firebase.utils';
 
 
-const isactive=(history,path)=>{
-   if(history.location.pathname===path){ 
-return {color:"rgb(255,189,57)"}
-}
-   else  return {color:"rgba(255,255,255,.5)"}
+// const isactive=(history,path)=>{
+//    if(history.location.pathname===path){ 
+// return {color:"rgb(255,189,57)"}
+// }
+//    else  return {color:"rgba(255,255,255,.5)"}
 
- }
+//  }
 
 
 
-const Header = ( history,props ) => {
+const Header = ( {currentUser} ) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -26,10 +27,19 @@ const Header = ( history,props ) => {
           <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto" navbar>
             <NavItem>
-              <NavLink href="/Contact" style={isactive(history,"/Contact")} className="ml-4 nav">CONTACT</NavLink>
+              <NavLink href="/Contact" className="ml-4 nav">CONTACT</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Contact" style={isactive(history,"/Contact")} className="ml-4 nav">SIGNIN</NavLink>
+              {/* <NavLink href="/Contact" style={isactive(history,"/Contact")} className="ml-4 nav">SIGNIN</NavLink> */}
+              {currentUser ? (
+                <NavLink className='option' href='/signin' onClick={() => auth.signOut()}>
+                  SIGN OUT
+                </NavLink>
+              ) : (
+                <NavLink className='option' href='/signin'>
+                  SIGN IN
+                </NavLink>
+              )}
             </NavItem>
           </Nav>
             
