@@ -1,16 +1,13 @@
 import React,{ Component } from 'react';
-import { INTERNS } from '../Shared/Interns';
+import  INTERNS_DATA from '../Shared/Interns';
 
-import {
-    Card, CardImg, CardBody,
-    CardTitle, CardSubtitle
-  } from 'reactstrap';
+import { Card, CardImg, CardBody,CardTitle, CardSubtitle } from 'reactstrap';
 
 class Admin extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          interns:INTERNS,
+          interns:INTERNS_DATA,
         };
     }
     render() { 
