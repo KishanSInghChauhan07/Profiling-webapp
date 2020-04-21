@@ -1,10 +1,7 @@
 import React,{ Component } from 'react';
 import  INTERNS_DATA from '../Shared/Interns';
 
-import {
-    Card, CardImg, CardBody,
-    CardTitle, CardSubtitle
-  } from 'reactstrap';
+import { Card, CardImg, CardBody,CardTitle, CardSubtitle } from 'reactstrap';
 
 class Admin extends Component {
     constructor(props) {

@@ -44,11 +44,11 @@ class Main extends Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
-    render() { 
-        return (
-            <>
+  render() { 
+      return (
+          <>
             <BrowserRouter>
-            <Header currentUser={this.state.currentUser}/>
+                <Header currentUser={this.state.currentUser}/>
                 <Switch>
                     <Route exact path='/Profile' component = { Profile } />
                     <Route exact path='/Contact' component = { Contact } />
@@ -58,8 +58,7 @@ class Main extends Component {
                 </Switch>
                 <Footer/>
             </BrowserRouter>
-               
-            </>
+          </>
         );
     }
 }

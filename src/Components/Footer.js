@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer(props) {
+function Footer( props ) {
     return(
         <div className="Footer footer-bottom border-top border-white">
             <div className="container">

@@ -3,8 +3,6 @@ import About from '../Components/About';
 import  INTERNS_DATA  from '../Shared/Interns';
 import Contact from '../Components/Contact';
 
-
-
 class profile extends Component {
     constructor(props) {
         super(props);
