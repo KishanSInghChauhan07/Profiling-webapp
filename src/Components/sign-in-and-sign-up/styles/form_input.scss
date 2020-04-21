@@ -1,5 +1,5 @@
 $sub-color: grey;
-$main-color: black;
+$main-color: white;
 
 @mixin shrinkLabel {
   top: -14px;
@@ -23,6 +23,7 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
+    background: inherit;
 
     &:focus {
       outline: none;
@@ -46,6 +47,7 @@ $main-color: black;
     left: 5px;
     top: 10px;
     transition: 300ms ease all;
+    color:white;
 
     &.shrink {
       @include shrinkLabel();

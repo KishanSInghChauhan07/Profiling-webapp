@@ -32,11 +32,11 @@ const Header = ( {currentUser} ) => {
             <NavItem>
               {/* <NavLink href="/Contact" style={isactive(history,"/Contact")} className="ml-4 nav">SIGNIN</NavLink> */}
               {currentUser ? (
-                <NavLink className='option' href='/signin' onClick={() => auth.signOut()}>
+                <NavLink className='option nav ml-4' href='/signin' onClick={() => auth.signOut()}>
                   SIGN OUT
                 </NavLink>
               ) : (
-                <NavLink className='option' href='/signin'>
+                <NavLink className='option nav ml-4' href='/signin'>
                   SIGN IN
                 </NavLink>
               )}
