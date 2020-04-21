@@ -6,7 +6,7 @@ import '../Styles/Navbar.css'
 
 const isactive=(history,path)=>{
    if(history.location.pathname===path){ 
-return {color:"rgb(255,189,57)"}
+return {color:"rgb(255,189,57)",textDecoration:"underline"}
 }
    else  return {color:"rgba(255,255,255,.5)"}
 

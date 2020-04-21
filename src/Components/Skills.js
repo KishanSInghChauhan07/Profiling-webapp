@@ -24,7 +24,7 @@ componentDidMount(){
                     </div>
                          
                 <div style={{ marginLeft:"15%" }} class="progress" >
-  <div data-aos='fade-right' data-aos-easing="ease-in-sine" class="progress-bar bg-success" role="progressbar" style={{width:skill.rating ? `${skill.rating}%`:"0%"}}  aria-valuemin="0" aria-valuemax="100"></div>
+  <div data-aos='fade-right' data-aos-easing="ease-in-sine" class="progress-bar bg-success" role="progressbar" style={{width:`${skill.rating}%`}}  aria-valuemin="0" aria-valuemax="100"></div>
 </div>
                 </div>
             )
