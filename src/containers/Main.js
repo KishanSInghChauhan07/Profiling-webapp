@@ -52,7 +52,7 @@ class Main extends Component {
                 <Switch>
                     <Route exact path='/Profile' component = { Profile } />
                     <Route exact path='/Contact' component = { Contact } />
-                    <Route exact path='/signin' component = {SignInAndSignUpPage}/>
+                    <Route exact path='/signin' render={() => this.state.currentUser ? (<Redirect to='/Profile' />) : (<SignInAndSignUpPage />)}/>
                     <Route exact path='/Admin' component={Admin}/>
                     <Redirect to="/Profile"/>
                 </Switch>
