@@ -1,8 +1,12 @@
-import React from 'react'
+import React  from 'react';
+
 
 const Education = ( { duration,specialization,grade,name}) => {
+
 		return(
+			
 			<div className="col-12 text-capitalize mt-5">
+				
                 <hr className="text-success" style={{ border: '2px solid', width: '2%' ,position:'absolute'}} />
 				<div style={{ position: 'relative' , left: '8%'}}>
 					<div className="d-flex flex-row ">

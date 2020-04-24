@@ -1,12 +1,16 @@
-import React from 'react';
-import { Button } from 'reactstrap';
+import React,{useState} from 'react';
 import './styles/About.scss'
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';
 import Projects from './Projects';
+import { Collapse, Button, CardBody, Card } from 'reactstrap';
+
 
 const About = ({ image,name,location,phone,email,dob,about,education ,skills,experience,projects}) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
     return (
             <div className="container">
                 <div id="about" className="row about-me">
@@ -27,6 +31,19 @@ const About = ({ image,name,location,phone,email,dob,about,education ,skills,exp
                 </div>
             </div>
             <h2 className="text-center text-warning mb-4">Education</h2>
+            <div className="education-form">
+                <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+                <Collapse isOpen={isOpen}>
+                    <Card>
+                    <CardBody>
+                    Anim pariatur cliche reprehenderit,
+                    enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident.
+                    </CardBody>
+                    </Card>
+                </Collapse>
+			</div>
             <div className="row text-center">
             { education
                 .map(({ id, ...otherItemProps }) => (
