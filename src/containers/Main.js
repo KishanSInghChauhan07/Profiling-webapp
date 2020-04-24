@@ -4,7 +4,7 @@ import Contact from '../Components/Contact';
 import Profile from './Profile';
 import Footer from '../Components/Footer';
 import SignInAndSignUpPage from './sign-in-and-sign-up';
-import Admin from '../Components/Admin'
+import Admin from '../Components/admin/Admin';
 import { Switch, Route, Redirect,BrowserRouter } from 'react-router-dom';
 import { auth, createUserProfileDocument } from '../firebase/firebase.utils';
 
