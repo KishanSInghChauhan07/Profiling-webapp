@@ -5,7 +5,7 @@ import './styles/sign-in-and-sign-up.scss';
 
 const SignInAndSignUpPage = () => (
   <>
-    <h2 className="text-center text-primary mb-5">Profiling App</h2>
+    <h2 className="text-center text-primary mb-5">PROFILING APP</h2>
     <div className='sign-in-and-sign-up'>
       <SignIn />
         <SignUp />

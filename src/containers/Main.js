@@ -4,7 +4,7 @@ import Contact from '../Components/Contact';
 import Profile from './Profile';
 import Footer from '../Components/Footer';
 import SignInAndSignUpPage from './sign-in-and-sign-up';
-import Admin from '../Components/Admin';
+import Admin from '../Components/admin/Admin';
 import {connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
