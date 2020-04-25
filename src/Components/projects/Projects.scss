@@ -1,0 +1,26 @@
+.col-8{
+    hr{
+        border: 2px solid; 
+        width: 10%; 
+        position:absolute;
+        top: 9% ;
+        left:-12% 
+    }
+    .rounded{
+        width:34%;
+        padding-bottom:4%;
+        margin-left:2%
+    }
+    .delete-option{
+        position:absolute;
+        right:3%;
+        top:12%;
+        cursor:pointer;
+        display: none;
+    }
+    &:hover{
+        .delete-option{
+        display: flex;
+        }
+    }
+}
