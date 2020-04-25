@@ -1,0 +1,28 @@
+#search{
+    margin-top:4%;
+    margin-bottom:4%;
+}
+#search-box{
+    outline:none;
+    border-radius: 30px 0 0 30px;
+    border:1px solid gray;
+    height:30px;
+    padding:20px;
+    width:50%;
+}
+
+#search-button{
+  cursor:pointer;
+  border-radius: 0 30px 30px 0; 
+  outline:none;
+  border:none;
+  background-color:#fff;
+  color:#669;
+  padding:8px;
+  width:40px;
+}
+
+#search-button:hover{
+    background-color:lavender;
+
+}

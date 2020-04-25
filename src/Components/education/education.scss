@@ -1,0 +1,23 @@
+.col-12{
+    margin-top:6%;
+    hr{
+        border: 2px solid;
+        width:2% ;
+        position:absolute   
+    }
+    
+    .delete-option{
+        position:absolute;
+        right:3%;
+        top:2%;
+        cursor:pointer;
+        display: none;
+    }
+    &:hover{
+        .delete-option{
+            display: flex
+            
+        }
+    }
+   
+}
