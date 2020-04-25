@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Button,Row, Col, Label } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
-class AddEducation extends Component {
+class AddExperience extends Component {
     constructor(props) {
         super(props);
     
@@ -36,10 +36,10 @@ class AddEducation extends Component {
                 <Collapse isOpen={this.state.isOpen}>
                     <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
                     <Row className="form-group">
-                        <Label htmlFor="name" md={2}>Collge/school Name</Label>
+                        <Label htmlFor="Role" md={2}>Role</Label>
                         <Col md={10}>
-                            <Control.text model=".name" id="name" name="name"
-                                placeholder="College/School Name"
+                            <Control.text model=".role" id="role" name="role"
+                                placeholder="Role"
                                 className="form-control"
                                 validators={{
                                     required
@@ -47,7 +47,7 @@ class AddEducation extends Component {
                                 />
                                 <Errors
                                     className="text-warning"
-                                    model=".name"
+                                    model=".role"
                                     show="touched"
                                     messages={{
                                         required: 'Required',
@@ -56,7 +56,7 @@ class AddEducation extends Component {
                         </Col>
                     </Row>
                     <Row className="form-group">
-                        <Label htmlFor="specialization" md={2}>Specialization</Label>
+                        <Label htmlFor="Com" md={2}>Specialization</Label>
                         <Col md={10}>
                             <Control.text model=".specialization" id="grade" name="grade"
                                 placeholder="Specialization"
@@ -146,4 +146,4 @@ class AddEducation extends Component {
     }
 }
 
-export default AddEducation;
+export default AddExperience;

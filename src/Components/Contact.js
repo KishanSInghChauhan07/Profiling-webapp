@@ -6,8 +6,8 @@ class Contact extends Component {
     render() { 
         return (
             <div className="container">
-                <h2 className="text-center text-warning">Contact</h2>
-                <div className="row">
+                <h2 className="text-warning mb-4">Contact</h2>
+                <div className="row" style={{margin:'6% 0 6% 0'}} >
                     <div className="col-md-4">
                         <div className="text-center">
                         <i className="fa fa-3x fa-home"></i>

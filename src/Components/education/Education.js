@@ -5,9 +5,9 @@ const Education = ( { duration,specialization,grade,name}) => {
 
 		return(
 			
-			<div className="col-12 text-capitalize mt-5">
+			<div className="col-12 text-capitalize">
 				
-                <hr className="text-success" style={{ border: '2px solid', width: '2%' ,position:'absolute'}} />
+                <hr className="text-success" />
 				<div style={{ position: 'relative' , left: '8%'}}>
 					<div className="d-flex flex-row ">
 						<h3 className="text-success">{name}</h3>

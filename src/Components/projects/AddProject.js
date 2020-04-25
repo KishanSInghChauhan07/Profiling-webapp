@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Button,Row, Col, Label } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
-class AddEducation extends Component {
+class AddProject extends Component {
     constructor(props) {
         super(props);
     
@@ -146,4 +146,4 @@ class AddEducation extends Component {
     }
 }
 
-export default AddEducation;
+export default AddProject;

@@ -6,6 +6,10 @@ import Experience from './experience/Experience';
 import Projects from './projects/Projects';
 import { Button } from 'reactstrap';
 import AddEducation from './education/AddEducation';
+import AddProject from './projects/AddProject';
+import AddSkill from './skills/AddSkill';
+import AddExperience from './experience/AddExperience';
+
 import {connect} from 'react-redux';
 import { setCurrentEducation} from '../redux/education/education-actions'
 
@@ -39,24 +43,27 @@ const About = ({ image,name,location,phone,email,dob,about,education ,skills,exp
                     <Education key={id} {...otherItemProps} />
                 ))}
                 </div>
-                <h2 className="text-center text-warning">Skills</h2>
-                <div className="row">
+                <h2 className="text-warning" style={{marginTop:'6rem' }}>Skills</h2>
+                <AddSkill />
+                <div className="row ">
                     { skills
                         .map(({ id, ...otherItemProps }) => (
                         <Skills key={id} {...otherItemProps} />
                     ))}
                 </div>
-                <div className="container mt-5 pl-5">
+                <div className="container mt-5">
 
-                <h2 className="text-center text-warning">Experience</h2>
-                    <div className="row  mb-3">
+                    <h2 className="text-warning">Experience</h2>
+                    <AddExperience />
+                    <div className="row pl-5 mb-3">
                         { experience
                             .map(({ id, ...otherItemProps }) => (
                             <Experience key={id} {...otherItemProps} />
                         ))}
                     </div>
                 </div>
-                <h2 className="text-center text-warning mt-4">Projects</h2>
+                <h2 className="text-warning mt-5">Projects</h2>
+                <AddProject />
                 <div className="row">
                     { projects
                         .map(({ id, ...otherItemProps }) => (
