@@ -14,7 +14,11 @@ const Projects = ({ title,image,description }) => {
                     <CardText className="text-white" style={{marginBottom:'8%'}} >
                         {description}</CardText>
                 </CardBody>
+                <div className="d-flex flex-row-reverse" style={{position:'absolute',right:'3%',top:'10%',cursor:'pointer'}}>
+      			&#10005;
+      		</div>
             </Card>
+            
         </div>
     );
         

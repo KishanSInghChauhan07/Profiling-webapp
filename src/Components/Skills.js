@@ -20,6 +20,9 @@ class Skills extends Component{
                 <div style={{ marginLeft:"15%" }} class="progress" >
                     <div data-aos='fade-right' data-aos-easing="ease-in-sine" class="progress-bar bg-success" role="progressbar" style={{width:rating ? `${rating}%`:"0%"}}  aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+                <div className="d-flex flex-row-reverse" style={{position:'absolute',right:'3%',top:'2%',cursor:'pointer'}}>
+      				&#10005;
+      			</div>
             </div>
         )
     }

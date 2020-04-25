@@ -13,6 +13,9 @@ const Experience = ({ company,role,duration,description }) => {
                         </div>
                         <p className="mt-2">{description}</p>
     				</div>
+                    <div className="d-flex flex-row-reverse" style={{position:'absolute',right:'5%',top:'10%',cursor:'pointer'}}>
+      				  &#10005;
+      				</div>
                  </div>
                         
             </React.Fragment>
