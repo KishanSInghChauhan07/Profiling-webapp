@@ -13,6 +13,9 @@ const Experience = ({ company,role,duration,description }) => {
                         </div>
                         <p className="mt-2">{description}</p>
     				</div>
+                    <div className="delete-option">
+      				  &#10005;
+      				</div>
                  </div>
                         
             </React.Fragment>

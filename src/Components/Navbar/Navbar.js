@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink } from 'reactstrap';
-import {withRouter } from "react-router-dom"
-import './styles/Navbar.scss'
-import { auth } from '../firebase/firebase.utils';
+import {withRouter } from "react-router-dom";
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { selectCurrentUser } from '../../redux/user/user-selectors';
+import './Navbar.scss'
+import { auth } from '../../firebase/firebase.utils';
 
 
 const isactive=(history,path)=>{
@@ -15,8 +18,8 @@ return {color:"rgb(255,189,57)",textDecoration:"underline"}
 
 
 
-const Header = ( history,props ) => {
-const Header = ( {currentUser} ) => {
+const Header = ( history,props,currentUser ) => {
+
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -46,11 +49,15 @@ const Header = ( {currentUser} ) => {
           </Collapse>
           <NavLink href="/Profile" className="text-white">
             {/* <img src='assets/images/download.png' height="40" width="31" alt='nav-title' style={{ borderRadius: '50%' }}/> */}
-            <i class="fa fa-user-circle fa-2x"></i>           
+            <i className="fa fa-user-circle fa-2x"></i>           
           </NavLink>
       </Navbar>
     </div>
   );
 }
 
-export default withRouter(Header);
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
+
+export default withRouter(connect(mapStateToProps)(Header)); 

@@ -1,0 +1,14 @@
+.col-12{
+    .delete-option{
+        position:absolute;
+        right:5%;
+        top:10%;
+        cursor:pointer;
+        display: none;
+    }
+    &:hover{
+        .delete-option{
+            display: inline;
+        }
+    }
+}
