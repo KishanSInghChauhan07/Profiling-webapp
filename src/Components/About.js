@@ -1,23 +1,18 @@
 import React from 'react';
 import './styles/About.scss'
-import Education from './Education';
-import Skills from './Skills';
-import Experience from './Experience';
-import Projects from './Projects';
+import Education from './education/Education';
+import Skills from './skills/Skills';
+import Experience from './experience/Experience';
+import Projects from './projects/Projects';
 import { Button } from 'reactstrap';
-import AddEducation from './Addeducation';
+import AddEducation from './education/AddEducation';
 import {connect} from 'react-redux';
 import { setCurrentEducation} from '../redux/education/education-actions'
 
 
 
-const About = ({ image,name,location,phone,email,dob,about,education ,skills,experience,projects,setCurrentEducation}) => {
-    
-  
-
-
-   
-    return (
+const About = ({ image,name,location,phone,email,dob,about,education ,skills,experience,projects,setCurrentEducation}) => {                
+        return (
             <div className="container">
                 <div id="about" className="row about-me">
                     <div className="col-md-6" style={{ padding: '0px 59px' ,overflow:'hidden'}}>

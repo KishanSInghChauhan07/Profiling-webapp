@@ -3,9 +3,9 @@ import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink } from 'r
 import {withRouter } from "react-router-dom";
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectCurrentUser } from '../redux/user/user-selectors';
-import './styles/Navbar.scss'
-import { auth } from '../firebase/firebase.utils';
+import { selectCurrentUser } from '../../redux/user/user-selectors';
+import './Navbar.scss'
+import { auth } from '../../firebase/firebase.utils';
 
 
 const Header = ( {currentUser} ) => {
