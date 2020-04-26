@@ -5,6 +5,7 @@ import Profile from './Profile';
 import Footer from '../Components/Footer';
 import SignInAndSignUpPage from './sign-in-and-sign-up';
 import Admin from '../Components/admin/Admin';
+import Recruiter from '../Components/recruiter/recruiter.js';
 import {connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -56,6 +57,7 @@ class Main extends Component {
                     <Route exact path='/Contact' component = { Contact } />
                     <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/Profile' />) : (<SignInAndSignUpPage />)}/>
                     <Route exact path='/Admin' component={Admin}/>
+                    <Route exact path='/Recruiter' component={Recruiter}/>
                     <Redirect to="/Profile"/>
                 </Switch>
                 <Footer/>
