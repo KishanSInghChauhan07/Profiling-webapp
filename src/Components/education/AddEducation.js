@@ -19,7 +19,7 @@ class AddEducation extends Component {
 
     handleSubmit(values){
         console.log('Current State is: ' + JSON.stringify(values));
-        this.props.addEducation(values.name,values.grade,values.specialization,values.year)
+        this.props.addEducation(values.name,values.grade,values.specialization,values.year,values.id)
     }
 
     render(){
