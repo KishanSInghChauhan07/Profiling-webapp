@@ -1,20 +1,20 @@
-import { educationActionTypes } from './education-types';
-import { addEducationId, addEducationID} from './education-utils'
+import { experienceActionTypes } from './experience-types';
+import {  addExperienceID} from './experience-utils'
 
 const INITIAL_STATE = {
-  currentEducation: []
+  currentExperience: []
 };
 
-const educationReducer = (state = INITIAL_STATE, action) => {
+const experienceReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case educationActionTypes.ADD_EDUCATION:
+    case experienceActionTypes.ADD_EXPERIENCE:
       return{
         ...state,
-        currentEducation: addEducationID(state.currentEducation , action.payload)
+        currentExperience: addExperienceID(state.currentExperience , action.payload)
       };
     default:
       return state;
   }
 };
 
-export default educationReducer;
+export default experienceReducer;

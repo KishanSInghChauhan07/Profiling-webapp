@@ -81,7 +81,7 @@ const INTERNS_DATA = [
                 id:0,
                 company:'Microsoft',
                 role:'React Developer Intern',
-                year: '2 mon',
+                duration: '2 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations.' 
 
             },
@@ -89,7 +89,7 @@ const INTERNS_DATA = [
                 id:1,
                 company:'Amazon',
                 role:'Full Stack Developer',
-                year: '3 mon',
+                duration: '3 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]

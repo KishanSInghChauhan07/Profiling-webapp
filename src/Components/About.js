@@ -10,13 +10,13 @@ import AddProject from './projects/AddProject';
 import AddSkill from './skills/AddSkill';
 import AddExperience from './experience/AddExperience';
 
-
+import { addSkills } from '../redux/skills/skills-actions';
 import { addEducation } from '../redux/education/education-actions';
-
 import {connect} from 'react-redux';
+import { addExperience } from '../redux/experience/experience-actions';
 
 
-const About = ({ image,name,location,phone,email,dob,about,skills,experience,projects,addEducation}) => {   
+const About = ({ image,name,location,phone,email,dob,about,experience,projects, addEducation, addExperience, addSkills}) => {   
                  
         return (
             <div className="container">
@@ -41,17 +41,12 @@ const About = ({ image,name,location,phone,email,dob,about,skills,experience,pro
                 <AddEducation addEducation={addEducation}  />
                 <Education />
                 <h2 className="text-warning" style={{marginTop:'6rem' }}>Skills</h2>
-                <AddSkill />
-                <div className="row ">
-                    { skills
-                        .map(({ id, ...otherItemProps }) => (
-                        <Skills key={id} {...otherItemProps} />
-                    ))}
-                </div>
+                <AddSkill addSkills={addSkills }/>
+                <Skills />
                 <div className="container mt-5">
 
                     <h2 className="text-warning">Experience</h2>
-                    <AddExperience />
+                    <AddExperience addExperience={addExperience}/>
                     <div className="row pl-5 mb-3">
                         { experience
                             .map(({ id, ...otherItemProps }) => (
@@ -73,7 +68,10 @@ const About = ({ image,name,location,phone,email,dob,about,skills,experience,pro
 }
 
 const mapDispatchToProps = dispatch => ({
-    addEducation: (name,grade,specialization,year) => dispatch(addEducation(name,grade,specialization,year))
+    addEducation: (name,grade,specialization,year) => dispatch(addEducation(name,grade,specialization,year)),
+    addExperience: (company,role,description,duration) => dispatch(addExperience(company,role,description,duration)),
+    addSkills: (name,rating) => dispatch(addSkills(name,rating))
+
 })
 
 

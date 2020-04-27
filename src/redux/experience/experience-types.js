@@ -1,3 +1,3 @@
-export const educationActionTypes = {
-    ADD_EDUCATION: 'ADD_EDUCATION'
+export const experienceActionTypes = {
+    ADD_EXPERIENCE: 'ADD_EXPERIENCE'
 };

@@ -1,4 +1,4 @@
-export const addEducationID = (currentEducation, currentEducationToAdd) => {
-    return [...currentEducation, { ...currentEducationToAdd, id: currentEducation.length }];
+export const addExperienceID = (currentExperience, currentExperienceToAdd) => {
+    return [...currentExperience, { ...currentExperienceToAdd, id: currentExperience.length }];
    };
    

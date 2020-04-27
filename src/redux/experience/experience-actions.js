@@ -1,11 +1,11 @@
-import { educationActionTypes } from './education-types';
+import { experienceActionTypes } from './experience-types';
 
-export const addEducation = (name,grade,specialization,year) => ({
-  type: educationActionTypes.ADD_EDUCATION,
+export const addExperience = (company,duration,description,role) => ({
+  type: experienceActionTypes.ADD_EXPERIENCE,
   payload: {
-    name:name,
-    grade:grade,
-    specialization:specialization,
-    year:year
+    company:company,
+    duration:duration,
+    description:description,
+    role:role
   }
 });

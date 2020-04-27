@@ -1,5 +1,5 @@
 import { educationActionTypes } from './education-types';
-import { addEducationId, addEducationID} from './education-utils'
+import { addEducationID} from './education-utils'
 
 const INITIAL_STATE = {
   currentEducation: []

@@ -19,9 +19,9 @@ class AddSkill extends Component {
     }
 
     handleSubmit(values){
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
-        // event.preventDefault();
+        
+        this.props.addSkills(values.name,values.rating,values.id)
+
     }
     
 
@@ -36,10 +36,10 @@ class AddSkill extends Component {
                 <Collapse isOpen={this.state.isOpen}>
                     <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
                     <Row className="form-group">
-                        <Label htmlFor="name" md={2}>Collge/school Name</Label>
+                        <Label htmlFor="name" md={2}>Skill Name</Label>
                         <Col md={10}>
                             <Control.text model=".name" id="name" name="name"
-                                placeholder="College/School Name"
+                                placeholder="Skill Name"
                                 className="form-control"
                                 validators={{
                                     required
@@ -55,73 +55,31 @@ class AddSkill extends Component {
                                 />
                         </Col>
                     </Row>
+                   
                     <Row className="form-group">
-                        <Label htmlFor="specialization" md={2}>Specialization</Label>
+                        <Label htmlFor="rating" md={2}>Rating</Label>
                         <Col md={10}>
-                            <Control.text model=".specialization" id="grade" name="grade"
-                                placeholder="Specialization"
+                            <Control.text model=".rating" id="rating" name="rating"
+                                placeholder="Rating"
                                 className="form-control"
                                 validators={{
-                                    required
+                                    required, minLength: minLength(1), maxLength: maxLength(3), isNumber
                                 }}
                                     />
                             <Errors
                                 className="text-warning"
-                                model=".specialization"
-                                show="touched"
-                                messages={{
-                                    required: 'Required'
-                            
-                                }}
-                                />
-                        </Col>
-                    </Row>
-                    <Row className="form-group">
-                        <Label htmlFor="grade" md={2}>Grade</Label>
-                        <Col md={10}>
-                            <Control.text model=".grade" id="grade" name="grade"
-                                placeholder="Grade"
-                                className="form-control"
-                                validators={{
-                                    required, minLength: minLength(1), maxLength: maxLength(2), isNumber
-                                }}
-                                    />
-                            <Errors
-                                className="text-warning"
-                                model=".grade"
+                                model=".rating"
                                 show="touched"
                                 messages={{
                                     required: 'Required',
-                                    minLength: 'Must be greater than 0 numbers',
+                                    minLength: 'Must be greater than 1 numbers',
                                     maxLength: 'Must be 3 numbers or less',
                                     isNumber: 'Must be a number'
                                 }}
                                 />
                         </Col>
                     </Row>
-                    <Row className="form-group">
-                        <Label htmlFor="year" md={2}>Year</Label>
-                        <Col md={10}>
-                            <Control.text model=".year" id="year" name="year"
-                                placeholder="Pass year"
-                                className="form-control"
-                                validators={{
-                                    required, minLength: minLength(4), maxLength: maxLength(4), isNumber
-                                }}
-                                    />
-                            <Errors
-                                className="text-warning"
-                                model=".year"
-                                show="touched"
-                                messages={{
-                                    required: 'Required',
-                                    minLength: 'Must be greater than 3 numbers',
-                                    maxLength: 'Must be 5 numbers or less',
-                                    isNumber: 'Must be a number'
-                                }}
-                                />
-                        </Col>
-                    </Row>
+                    
                     <Row className="form-group d-flex">
                         <Col md={{size:10, offset: 2}}>
                             <Button type="submit" color="success">
@@ -130,14 +88,7 @@ class AddSkill extends Component {
                         </Col>
                         
                     </Row>
-                    <Row className="form-group d-flex">
-                        <Col md={{size:10, offset: 2}}>
-                            <Button color="success">
-                               Cancel
-                            </Button>
-                        </Col>
-                        
-                    </Row>
+                   
                    
                  </LocalForm>
             </Collapse>

@@ -4,16 +4,21 @@ import storage from 'redux-persist/lib/storage';
 
 import userReducer from './user/user-reducer';
 import educationReducer from './education/education-reducer';
+import experienceReducer from './experience/experience-reducer';
+import skillsReducer from './skills/skills-reducer';
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['education']
+  whitelist: ['education','skills']
 };
 
 const rootReducer = combineReducers({
   user: userReducer,
-  education:educationReducer
+  education:educationReducer,
+  experience:experienceReducer,
+  skills:skillsReducer
+
 });
 
 export default persistReducer(persistConfig, rootReducer);
