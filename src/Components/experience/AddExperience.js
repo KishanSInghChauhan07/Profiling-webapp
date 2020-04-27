@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, Button,Row, Col, Label } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+
 class AddExperience extends Component {
     constructor(props) {
         super(props);
@@ -18,14 +19,13 @@ class AddExperience extends Component {
     }
 
     handleSubmit(values){
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
 
-        // this.props.addExperience(values.company,values.role,values.description,values.duration,values.id)
+           this.props.addExperience(values.company,values.role,values.description,values.duration,values.id)
+
     }
+    
 
     render(){
-        
         const required = (val) => val && val.length;
         const maxLength = (len) => (val) => !(val) || (val.length <= len);
         const minLength = (len) => (val) => val && (val.length >= len);
@@ -47,7 +47,7 @@ class AddExperience extends Component {
                                 />
                                 <Errors
                                     className="text-warning"
-                                    model=".comapny"
+                                    model=".company"
                                     show="touched"
                                     messages={{
                                         required: 'Required',
@@ -55,11 +55,12 @@ class AddExperience extends Component {
                                 />
                         </Col>
                     </Row>
+                   
                     <Row className="form-group">
                         <Label htmlFor="role" md={2}>Role</Label>
                         <Col md={10}>
                             <Control.text model=".role" id="role" name="role"
-                                placeholder="role"
+                                placeholder="Role"
                                 className="form-control"
                                 validators={{
                                     required
@@ -70,8 +71,30 @@ class AddExperience extends Component {
                                 model=".role"
                                 show="touched"
                                 messages={{
-                                    required: 'Required'
-                            
+                                    required: 'Required',
+                                   
+                                }}
+                                />
+                        </Col>
+                    </Row>
+                    <Row className="form-group">
+                        <Label htmlFor="description" md={2}>Description</Label>
+                        <Col md={10}>
+                            <Control.text model=".description" id="description" name="description"
+                                placeholder="Description"
+                                className="form-control"
+                                validators={{
+                                    required, minLength: minLength(50), maxLength: maxLength(200)
+                                }}
+                                    />
+                            <Errors
+                                className="text-warning"
+                                model=".description"
+                                show="touched"
+                                messages={{
+                                    required: 'Required',
+                                    minLength: 'Must be greater than 1 numbers',
+                                    maxLength: 'Must be 3 numbers or less'
                                 }}
                                 />
                         </Col>
@@ -92,31 +115,9 @@ class AddExperience extends Component {
                                 show="touched"
                                 messages={{
                                     required: 'Required',
-                                    minLength: 'Must be greater than 0 numbers',
+                                    minLength: 'Must be greater than 1 numbers',
                                     maxLength: 'Must be 3 numbers or less',
                                     isNumber: 'Must be a number'
-                                }}
-                                />
-                        </Col>
-                    </Row>
-                    <Row className="form-group">
-                        <Label htmlFor="description" md={2}>Description</Label>
-                        <Col md={10}>
-                            <Control.text model=".description" id="description" name="description"
-                                placeholder="Description"
-                                className="form-control"
-                                validators={{
-                                    required, minLength: minLength(50), maxLength: maxLength(200), isNumber
-                                }}
-                                    />
-                            <Errors
-                                className="text-warning"
-                                model=".description"
-                                show="touched"
-                                messages={{
-                                    required: 'Required',
-                                    minLength: 'Must be greater than 50 numbers',
-                                    maxLength: 'Must be 200 numbers or less',
                                 }}
                                 />
                         </Col>
@@ -130,12 +131,12 @@ class AddExperience extends Component {
                         
                     </Row>
                    
+                   
                  </LocalForm>
             </Collapse>
         </div>
     );
     }
 }
-
 
 export default AddExperience;

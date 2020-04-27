@@ -16,7 +16,7 @@ import {connect} from 'react-redux';
 import { addExperience } from '../redux/experience/experience-actions';
 
 
-const About = ({ image,name,location,phone,email,dob,about,experience,projects, addEducation, addExperience, addSkills}) => {   
+const About = ({ image,name,location,phone,email,dob,about, projects, addEducation, addExperience, addSkills}) => {   
                  
         return (
             <div className="container">
@@ -47,12 +47,7 @@ const About = ({ image,name,location,phone,email,dob,about,experience,projects, 
 
                     <h2 className="text-warning">Experience</h2>
                     <AddExperience addExperience={addExperience}/>
-                    <div className="row pl-5 mb-3">
-                        { experience
-                            .map(({ id, ...otherItemProps }) => (
-                            <Experience key={id} {...otherItemProps} />
-                        ))}
-                    </div>
+                    <Experience />
                 </div>
                 <h2 className="text-warning mt-5">Projects</h2>
                 <AddProject />

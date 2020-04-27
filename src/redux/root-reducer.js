@@ -10,7 +10,7 @@ import skillsReducer from './skills/skills-reducer';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['education','skills']
+  whitelist: ['education','skills','experience']
 };
 
 const rootReducer = combineReducers({

@@ -1,11 +1,11 @@
 import { experienceActionTypes } from './experience-types';
 
-export const addExperience = (company,duration,description,role) => ({
+export const addExperience = (company,role,description,duration) => ({
   type: experienceActionTypes.ADD_EXPERIENCE,
   payload: {
     company:company,
-    duration:duration,
+    role:role,
     description:description,
-    role:role
+    duration:duration
   }
 });
