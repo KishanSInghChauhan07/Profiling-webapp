@@ -10,12 +10,14 @@ import AddProject from './projects/AddProject';
 import AddSkill from './skills/AddSkill';
 import AddExperience from './experience/AddExperience';
 
+
+import { addEducation } from '../redux/education/education-actions';
+
 import {connect} from 'react-redux';
-import { setCurrentEducation} from '../redux/education/education-actions'
 
 
-
-const About = ({ image,name,location,phone,email,dob,about,education ,skills,experience,projects,setCurrentEducation}) => {                
+const About = ({ image,name,location,phone,email,dob,about,skills,experience,projects,addEducation}) => {   
+                 
         return (
             <div className="container">
                 <div id="about" className="row about-me">
@@ -36,13 +38,8 @@ const About = ({ image,name,location,phone,email,dob,about,education ,skills,exp
                     </div>
                 </div>
                 <h2 className="text-warning">Education</h2>
-                <AddEducation setCurrentEducation={setCurrentEducation}/>
-                <div className="row text-center">
-                { education
-                    .map(({ id, ...otherItemProps }) => (
-                    <Education key={id} {...otherItemProps} />
-                ))}
-                </div>
+                <AddEducation addEducation={addEducation}  />
+                <Education />
                 <h2 className="text-warning" style={{marginTop:'6rem' }}>Skills</h2>
                 <AddSkill />
                 <div className="row ">
@@ -75,11 +72,10 @@ const About = ({ image,name,location,phone,email,dob,about,education ,skills,exp
     )
 }
 
-// const mapStateToProps = 
-
 const mapDispatchToProps = dispatch => ({
-    setCurrentEducation: (grade,specialization,name,year) => dispatch(setCurrentEducation(grade,specialization,name,year))
-  });
+    addEducation: (name,grade,specialization,year) => dispatch(addEducation(name,grade,specialization,year))
+})
 
 
-export default connect(mapDispatchToProps)(About);
+
+export default connect(null,mapDispatchToProps)(About);

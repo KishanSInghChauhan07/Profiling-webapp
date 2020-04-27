@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse, Button,Row, Col, Label } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-
 class AddEducation extends Component {
     constructor(props) {
         super(props);
@@ -20,12 +19,11 @@ class AddEducation extends Component {
 
     handleSubmit(values){
         console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
-        // event.preventDefault();
+        this.props.addEducation(values.name,values.grade,values.specialization,values.year)
     }
-    
 
     render(){
+        
         const required = (val) => val && val.length;
         const maxLength = (len) => (val) => !(val) || (val.length <= len);
         const minLength = (len) => (val) => val && (val.length >= len);
@@ -130,14 +128,6 @@ class AddEducation extends Component {
                         </Col>
                         
                     </Row>
-                    <Row className="form-group d-flex">
-                        <Col md={{size:10, offset: 2}}>
-                            <Button color="success">
-                               Cancel
-                            </Button>
-                        </Col>
-                        
-                    </Row>
                    
                  </LocalForm>
             </Collapse>
@@ -145,5 +135,6 @@ class AddEducation extends Component {
     );
     }
 }
+
 
 export default AddEducation;

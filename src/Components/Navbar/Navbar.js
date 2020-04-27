@@ -8,17 +8,17 @@ import './Navbar.scss'
 import { auth } from '../../firebase/firebase.utils';
 
 
-const isactive=(history,path)=>{
-   if(history.location.pathname===path){ 
-return {color:"rgb(255,189,57)",textDecoration:"underline"}
-}
-   else  return {color:"rgba(255,255,255,.5)"}
+// const isactive=(history,path)=>{
+//    if(history.location.pathname===path){ 
+// return {color:"rgb(255,189,57)",textDecoration:"underline"}
+// }
+//    else  return {color:"rgba(255,255,255,.5)"}
 
- }
+//  }
 
 
 
-const Header = ( history,props,currentUser ) => {
+const Header = ({currentUser} ) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);

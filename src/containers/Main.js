@@ -7,13 +7,11 @@ import SignInAndSignUpPage from './sign-in-and-sign-up';
 import Admin from '../Components/admin/Admin';
 import Recruiter from '../Components/recruiter/recruiter.js';
 import {connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 
 import { Switch, Route, Redirect,BrowserRouter } from 'react-router-dom';
 import { auth, createUserProfileDocument } from '../firebase/firebase.utils';
 
 import { setCurrentUser } from '../redux/user/user-actions';
-import { selectCurrentUser } from '../redux/user/user-selectors';
 
 class Main extends Component {
   
@@ -28,16 +26,14 @@ class Main extends Component {
         const userRef = await createUserProfileDocument(userAuth);
 
         userRef.onSnapshot(snapShot => {
-          this.setState({
-            currentUser: {
+      
+            setCurrentUser({
               id: snapShot.id,
               ...snapShot.data()
-            }
+            });
           });
 
-          console.log(this.state);
-        });
-      }
+        }
 
       setCurrentUser(userAuth );
     });
@@ -67,8 +63,8 @@ class Main extends Component {
     }
 }
  
-const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+const mapStateToProps = user => ({
+  currentUser: user.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({

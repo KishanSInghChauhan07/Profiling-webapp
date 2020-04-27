@@ -16,20 +16,20 @@ const INTERNS_DATA = [
                 name:'College of Engineering Roorkee',
                 specialization: 'B.tech',
                 grade:70,
-                duration:2020,
+                year:2020,
             },
             {
                 id: 1,
                 name:'Chatrapati Shivaji Inter College',
                 specialization: '12',
-                duration:2015,
+                year:2015,
                 grade:86,
             },
             {
                 id: 2,
                 name:'DNS HSS Education Centre',
                 specialization: '10',
-                duration:2013,
+                year:2013,
                 grade:91,
             }
         ],
@@ -81,7 +81,7 @@ const INTERNS_DATA = [
                 id:0,
                 company:'Microsoft',
                 role:'React Developer Intern',
-                duration: '2 mon',
+                year: '2 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations.' 
 
             },
@@ -89,7 +89,7 @@ const INTERNS_DATA = [
                 id:1,
                 company:'Amazon',
                 role:'Full Stack Developer',
-                duration: '3 mon',
+                year: '3 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
@@ -106,24 +106,24 @@ const INTERNS_DATA = [
         dob:'20-10-1998',
         education: [
             {
-                id: 0,
+                id: 4,
                 name:'College of Engineering Roorkee',
                 specialization: 'B.tech',
                 grade:70,
-                duration:2020,
+                year:2020,
             },
             {
-                id: 1,
+                id: 5,
                 name:'Chatrapati Shivaji Inter College',
                 specialization: '12',
-                duration:2015,
+                year:2015,
                 grade:86,
             },
             {
-                id: 2,
+                id: 6,
                 name:'DNS HSS Education Centre',
                 specialization: '10',
-                duration:2013,
+                year:2013,
                 grade:91,
             }
         ],
@@ -175,7 +175,7 @@ const INTERNS_DATA = [
                 id:0,
                 company:'Microsoft',
                 role:'React Developer Intern',
-                duration: '2 mon',
+                year: '2 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
 
             },
@@ -183,7 +183,7 @@ const INTERNS_DATA = [
                 id:1,
                 company:'Amazon',
                 role:'Full Stack Developer',
-                duration: '3 mon',
+                year: '3 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
@@ -200,24 +200,24 @@ const INTERNS_DATA = [
         dob:'20-10-1998'   ,
         education: [
             {
-                id: 0,
+                id: 7,
                 name:'College of Engineering Roorkee',
                 specialization: 'B.tech',
                 grade:70,
-                duration:2020,
+                year:2020,
             },
             {
-                id: 1,
+                id: 8,
                 name:'Chatrapati Shivaji Inter College',
                 specialization: '12',
-                duration:2015,
+                year:2015,
                 grade:86,
             },
             {
-                id: 2,
+                id: 9,
                 name:'DNS HSS Education Centre',
                 specialization: '10',
-                duration:2013,
+                year:2013,
                 grade:91,
             }
         ],
@@ -269,7 +269,7 @@ const INTERNS_DATA = [
                 id:0,
                 company:'Microsoft',
                 role:'React Developer Intern',
-                duration: '2 mon',
+                year: '2 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
 
             },
@@ -277,7 +277,7 @@ const INTERNS_DATA = [
                 id:1,
                 company:'Amazon',
                 role:'Full Stack Developer',
-                duration: '3 mon',
+                year: '3 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
@@ -294,24 +294,24 @@ const INTERNS_DATA = [
         dob:'20-10-1998',
         education: [
             {
-                id: 0,
+                id:10,
                 name:'College of Engineering Roorkee',
                 specialization: 'B.tech',
                 grade:70,
-                duration:2020,
+                year:2020,
             },
             {
-                id: 1,
+                id:11,
                 name:'Chatrapati Shivaji Inter College',
                 specialization: '12',
-                duration:2015,
+                year:2015,
                 grade:86,
             },
             {
-                id: 2,
+                id:12,
                 name:'DNS HSS Education Centre',
                 specialization: '10',
-                duration:2013,
+                year:2013,
                 grade:91,
             }
         ],
@@ -365,7 +365,7 @@ const INTERNS_DATA = [
                 id:0,
                 company:'Microsoft',
                 role:'React Developer Intern',
-                duration: '2 mon',
+                year: '2 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
 
             },
@@ -373,7 +373,7 @@ const INTERNS_DATA = [
                 id:1,
                 company:'Amazon',
                 role:'Full Stack Developer',
-                duration: '3 mon',
+                year: '3 mon',
                 description:'This is the basic to intermediate level of the project. Here a user can log in and share their experience of any camping location or campground and these locations will be shown to the other users. Users can also comment on the location and show their interest in those locations. ' 
             }
         ]
@@ -382,4 +382,4 @@ const INTERNS_DATA = [
 ]  
 
 
-export default INTERNS_DATA;
+export default INTERNS_DATA;    

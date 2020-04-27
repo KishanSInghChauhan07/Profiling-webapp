@@ -1,11 +1,11 @@
 import { educationActionTypes } from './education-types';
 
-export const setCurrentEducation = (name,grade,year,specialization) => ({
+export const addEducation = (name,grade,specialization,year) => ({
   type: educationActionTypes.ADD_EDUCATION,
   payload: {
-      grade:grade,
-      name:name,
-      year:year,
-      specialization:specialization
+    name:name,
+    grade:grade,
+    specialization:specialization,
+    year:year
   }
 });
