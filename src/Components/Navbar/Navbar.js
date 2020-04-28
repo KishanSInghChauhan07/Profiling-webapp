@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../redux/user/user-selectors';
 import './Navbar.scss'
 import { auth } from '../../firebase/firebase.utils';
-
+import {Link }  from "react-scroll"
 
 const isactive=(history,path)=>{
    if(history.location.pathname===path){ 
@@ -31,7 +31,7 @@ const Header = ( history,props,currentUser ) => {
           <Collapse isOpen={isOpen} navbar>
           <Nav className="m-auto" navbar>
             <NavItem>
-              <NavLink href="/Contact" className="ml-4 nav">CONTACT</NavLink>
+              <NavLink> <Link  to="contacting" duration={1000} smooth className="ml-4 nav">CONTACT</Link></NavLink>
             </NavItem>
             <NavItem>
               {currentUser ? (

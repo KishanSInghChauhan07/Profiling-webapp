@@ -5,7 +5,7 @@ class Contact extends Component {
     state = {  }
     render() { 
         return (
-            <div className="container">
+            <div className="container contacting">
                 <h2 className="text-warning mb-4">Contact</h2>
                 <div className="row" style={{margin:'6% 0 6% 0'}} >
                     <div className="col-md-4">
